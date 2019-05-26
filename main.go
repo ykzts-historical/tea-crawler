@@ -37,9 +37,19 @@ func search(service *youtube.Service, channelID string, pageToken string) (*yout
 }
 
 func normalize(p string) string {
-	s := strings.Replace(p, "/", "／", -1)
-	s = strings.Replace(s, "?", "？", -1)
-	s = strings.Replace(s, ".", "．", -1)
+	s := strings.Replace(p, "?", "", -1)
+	s = strings.Replace(s, "\"", "'", -1)
+	s = strings.Replace(s, ":", " -", -1)
+	s = strings.Replace(s, "\\", "_", -1)
+	s = strings.Replace(s, "/", "_", -1)
+	s = strings.Replace(s, "|", "_", -1)
+	s = strings.Replace(s, "*", "_", -1)
+	s = strings.Replace(s, "<", "_", -1)
+	s = strings.Replace(s, ">", "_", -1)
+	s = strings.Replace(s, "|", "_", -1)
+	s = strings.Replace(s, "|", "_", -1)
+	s = strings.Replace(s, "|", "_", -1)
+	s = strings.Replace(s, "|", "_", -1)
 
 	return s
 }
