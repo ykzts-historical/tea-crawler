@@ -3,7 +3,7 @@
 ## Install
 
 ```console
-$ go get -u github.com/ykzts/tea-crawler/cmd/tea-crawler
+$ go get -u github.com/ykzts/tea-crawler
 ```
 
 ## Usage
