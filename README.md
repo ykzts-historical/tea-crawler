@@ -1,3 +1,5 @@
+**archived: [AniMare Search](https://github.com/inabagumi/animare-search) is a similar project.**
+
 # Tea Crawler
 
 ## Install
